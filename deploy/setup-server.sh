@@ -13,6 +13,7 @@ DEPLOY_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 id rewinged >/dev/null 2>&1 || sudo useradd --system --home-dir /var/lib/rewinged --shell /usr/sbin/nologin rewinged
 sudo mkdir -p /opt/rewinged /var/lib/rewinged
 
+command -v unzip >/dev/null 2>&1 || { sudo apt-get update -qq && sudo apt-get install -y -qq unzip; }
 # 2. rewinged binary, verified against the upstream checksum file
 tmp="$(mktemp -d)"; trap 'rm -rf "$tmp"' EXIT
 base="https://github.com/jantari/rewinged/releases/download/v${REWINGED_VERSION}"
