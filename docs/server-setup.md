@@ -36,7 +36,11 @@ checksum file, clones this repo to `/var/lib/rewinged/repo`, installs
 runs `caddy validate` and only then reloads Caddy. If validation fails, the
 site block is removed again and Caddy is not reloaded.
 
-The site block has no `tls` line, so Caddy obtains a certificate via ACME.
+TLS uses the provider-issued certificate (Let's Encrypt) installed under
+`/etc/caddy/certs/winget.itprise.com/` (`fullchain.pem`, `privkey.pem`, mode 0640,
+owner root:caddy). The certificate and key are NOT in git; install them by hand
+before running the script, otherwise `caddy validate` fails and the site block
+is rolled back.
 
 Test:
 
