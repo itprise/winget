@@ -1,8 +1,7 @@
 # itprise/winget
 
-Windows distribution of ITPrise Studio (winget / Microsoft Store source).
+Installers and winget manifests for ITPrise Studio (Windows).
 
-Installers are published as GitHub Releases in this repository. Every release
-asset ships with a SHA-256 checksum (`SHA256SUMS.txt`).
-
-The winget source is documented in [docs/server-setup.md](docs/server-setup.md).
+- Installers: see the GitHub Releases of this repository. Each release ships
+  the signed packages with a SHA-256 checksum per package and `SHA256SUMS.txt`.
+- Manifests: `manifests/` (winget community layout).
