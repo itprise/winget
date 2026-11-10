@@ -1,9 +1,11 @@
 # Site block for the winget source (rewinged on 127.0.0.1:8080).
 # Install as /etc/caddy/sites-enabled/winget.itprise.com.caddy - the main
 # Caddyfile imports /etc/caddy/sites-enabled/*.caddy.
-# No `tls` directive on purpose: no certificate was supplied for this host,
-# so Caddy obtains one via ACME (ports 80 + 443 must be reachable).
+# TLS: provider-issued certificate (Let's Encrypt) installed under
+# /etc/caddy/certs/winget.itprise.com/ (0640 root:caddy). It is NOT in git.
 winget.itprise.com {
+	tls /etc/caddy/certs/winget.itprise.com/fullchain.pem /etc/caddy/certs/winget.itprise.com/privkey.pem
+
 	encode zstd gzip
 	reverse_proxy 127.0.0.1:8080
 
