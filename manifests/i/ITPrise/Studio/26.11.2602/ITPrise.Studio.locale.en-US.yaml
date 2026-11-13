@@ -1,0 +1,10 @@
+PackageIdentifier: ITPrise.Studio
+PackageVersion: 26.11.2602
+PackageLocale: en-US
+Publisher: ITPrise AG
+PublisherUrl: https://www.itprise.com
+PackageName: Studio
+License: Proprietary
+ShortDescription: ITPrise Studio desktop application for Windows.
+ManifestType: defaultLocale
+ManifestVersion: 1.6.0
