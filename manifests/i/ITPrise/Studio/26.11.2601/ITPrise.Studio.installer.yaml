@@ -1,0 +1,19 @@
+PackageIdentifier: ITPrise.Studio
+PackageVersion: 26.11.2601
+InstallerLocale: en-US
+MinimumOSVersion: 10.0.0.0
+InstallerType: wix
+Scope: machine
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/itprise/winget/releases/download/v26.11.2601/Studio_26.11.2601_x64_en-US.msi
+  InstallerSha256: B9E7E39852B6E4298F2785EDC9FEDEF6124A941F1690F5C78CFF43800F9DF811
+  ProductCode: '{3462336F-D4BD-4F03-AA12-7F09A52CBC46}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Studio
+    Publisher: ITPrise AG
+    DisplayVersion: 26.11.2601
+    ProductCode: '{3462336F-D4BD-4F03-AA12-7F09A52CBC46}'
+    UpgradeCode: '{DA3C19A9-C67B-5300-A0E7-BF4EFB1EEB52}'
+ManifestType: installer
+ManifestVersion: 1.6.0
