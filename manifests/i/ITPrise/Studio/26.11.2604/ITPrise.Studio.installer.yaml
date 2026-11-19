@@ -6,13 +6,13 @@ Scope: machine
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/itprise/winget/releases/download/v26.11.2604/Studio_26.11.2604_x64_en-US.msi
-  InstallerSha256: 7D6F9987C14D89B11A2587440A113F85BE6490A9F4E815BF3DE0997EC19F0E9C
-  ProductCode: '{6FF3F4C9-407E-4D8A-BC5D-F56620432665}'
+  InstallerSha256: E0685150C3AEB65F77469D9D459ED808A5F44214A10064A449EF905A139A80FD
+  ProductCode: '{8D00443F-2B49-4255-8FF8-35427B640D8A}'
   AppsAndFeaturesEntries:
   - DisplayName: Studio
     Publisher: ITPrise AG
     DisplayVersion: 26.11.2604
-    ProductCode: '{6FF3F4C9-407E-4D8A-BC5D-F56620432665}'
+    ProductCode: '{8D00443F-2B49-4255-8FF8-35427B640D8A}'
     UpgradeCode: '{DA3C19A9-C67B-5300-A0E7-BF4EFB1EEB52}'
 ManifestType: installer
 ManifestVersion: 1.6.0
